@@ -8,6 +8,9 @@ export default function Main() {
   function generateAllNewDice() {
     return Array.from({length: 10}, () => Math.ceil(Math.random() * 6))
   }
+  function rollDice() {
+    setDice(generateAllNewDice)
+  }
 
   return (
     <>
@@ -19,6 +22,7 @@ export default function Main() {
 
           {diceElements}
         </div>
+        <button className="roll-btn" onClick={rollDice}>Roll</button>
       </main>
 
     </>
