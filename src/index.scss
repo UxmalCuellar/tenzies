@@ -1,0 +1,40 @@
+$darkBgColor:#0B2434;
+$lightBgColor:#f5f5f5;
+$greenHL:#59E391;
+$darkText:#2B283A;
+$lightText:#4A4E74;
+$button:#5035FF;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: $darkBgColor;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#root {
+    height: 100%;
+    width: 100%;
+    max-height: 500px;
+    max-width: 500px;
+}
+
+main {
+    background-color: $lightBgColor;
+    height: 100%;
+    border-radius: 10px;
+    font-family:inter, sans-serf;
+    text-align: center;
+    padding: 33px;
+    p {
+      font-size: 1.1rem;
+    }
+}
