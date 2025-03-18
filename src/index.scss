@@ -31,10 +31,38 @@ main {
     background-color: $lightBgColor;
     height: 100%;
     border-radius: 10px;
-    font-family:inter, sans-serf;
+    font-family:Inter, sans-serf;
     text-align: center;
     padding: 33px;
+    h1 {
+      color:$darkText;
+    }
     p {
+      color: $lightText;
       font-size: 1.1rem;
+      padding-bottom: 40px;
     }
 }
+.die-container {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+ .die-button {
+   font-size: 2rem;
+   height: 70px;
+   width: 70px;
+   border-radius: 10px;
+   border: none;
+   background-color: #fff;
+   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.15);
+   cursor: pointer;
+   &:hover{
+   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+   background-color: $greenHL;
+   }
+   &:active {
+     transform:scale(0.97);
+   }
+ }

@@ -3,6 +3,13 @@ import Die from './Die'
 
 export default function Main() {
   const value = Math.floor(Math.random() * (6 - 1 + 1) + 1)
+
+  function generateAllNewDice() {
+
+    const randomDice = Array(6).fill(Math.floor(Math.random() * (6 - 1 + 1) + 1))
+    console.log(randomDice)
+  }
+
   return (
     <>
       <main className="container">
